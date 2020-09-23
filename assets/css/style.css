@@ -1,9 +1,11 @@
+/* This is overall formatting. The * is a universal style selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Gives the entire page the light grey background */
 body {
     background-color: #d9dcd6;
 }
@@ -23,11 +25,11 @@ body {
 }
 
 .header h1 .seo {
-    color: #d9dcd6;
+    color: #d9dcd6; /* Gives the 'seo' letters a slightly different color */
 }
 
 .header nav {
-    padding-top: 15px;
+    padding-top: 15px; 
     margin-right: 20px;
     float: right; /* Puts <nav> to right side of screen */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -45,16 +47,18 @@ body {
 
 /* End Header CSS */
 
+/* Anchor tags in unordered list; links to spot on existing webpage */
 a {
-    /* Anchor tags in unordered list; links to spot on existing webpage */
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Sets font-size for all <p> tags */
 p {
     font-size: 16px;
 }
 
+/* CSS for large image in center of page, under header */
 .hero {
     width: 100%;
     background-size: cover;
@@ -62,6 +66,7 @@ p {
     padding-bottom: 20px;
 }
 
+/* .float-left and .float-right place images in each <section> of <article> to the left or right of the text */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -72,12 +77,35 @@ p {
     margin-left: 25px;
 }
 
+/* CSS for <article> to use only 75% of the width of the page */
 .content {
     width: 75%;
-    display: inline-block;
+    display: inline-block; /* Allows <aside> to appear next to <article> */
     margin-left: 20px;
 }
 
+/* CSS for each <section> of <article> */
+/* Gave each <section> of <article> the same class to condense CSS */
+ .article-content {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.article-content img {
+    max-height: 200px;
+}
+
+.article-content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}    
+
+/* CSS for <aside> to appear next to <article> using other 20% of the width of the page */
+/* Margins and padding make up the other 5% of the width of the page */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -89,108 +117,26 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* CSS for the three <section> in <aside> */
+/* Positions of the .png <img> <h3> and text alignment in <aside> */
+/* Gave each <section> of <aside> the same class to condense CSS */
+.right-side {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.right-side h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.right-side img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* CSS for footer */
 footer {
     padding: 30px;
     clear: both;
